@@ -1,0 +1,7 @@
+<%= button_to "Create a group", groups_path %>
+
+<h1>Groups</h1>
+
+<% @groups.each do |group| %>
+  <li><%= link_to "Group #{group.id}", group_path(group) %></li>
+<% end %>
